@@ -1,0 +1,104 @@
+/* CSS Reference from W3School: https://www.w3schools.com/cssref/ */
+
+/* Example Variables */
+:root {
+	/* Fonts */
+	--main-font-primary: "Roboto", sans-serif;
+	--main-font-secondary: "Montserrat", sans-serif;
+	--main-font-tertiary: "Comfortaa", cursive;
+	/* Colors */
+	--main-color-gray: #485359;
+	--main-color-white: #e9f0f2;
+	--main-color-black: #0d0d0d;
+	--main-color-light: #5ef2ad;
+	--main-color-dark: #45735d;
+	--main-color-light2: #f38888;
+	--main-color-dark2: #d27575;
+	--main-color-light3: #a0d3f2;
+	--main-color-dark3: #769bb3;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+body {
+    background-color: hotpink;
+    display: grid;
+    grid-template-columns: 5rem 1fr 5rem;
+    grid-template-rows: auto auto 100px;
+    grid-template-areas: "header header header"
+        ". main ."
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header span a {
+    display: block;
+    padding: .5rem 1rem;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--main-color-black);
+}
+
+header nav a {
+    font-style: italic;
+    color: var(--main-color-black);
+}
+
+header nav ul {
+    display: flex;
+    width: auto;
+    margin-bottom: 0;
+}
+
+header nav ul li {
+    display: block;
+    padding: .5rem 1rem;
+    width: auto;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    padding: .5rem 1rem;
+}
+
+/* Example Syntax */
+section {
+	height: auto;
+    padding: 1rem;
+	background-color: lemonchiffon;
+    border-radius: .5rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.fa-solid {
+    color: hotpink;
+    font-size: 100px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
